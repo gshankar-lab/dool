@@ -1,0 +1,20 @@
+.bg-orange {
+  background: linear-gradient(to right, #F3B33E, #EB693C); 
+}
+
+.footer-icon {
+  font-size: 16px;
+}
+.bg-footer {
+  background-image: url('/assets/images/Group.png');
+  background-size: cover;
+  background-position: center;
+}
+.bg-footerright {
+  background-image: url('/assets/images/NewImage.png');
+  background-size: cover;
+  background-position: center;
+}
+.background{
+    background: #FEF3F2;
+}
