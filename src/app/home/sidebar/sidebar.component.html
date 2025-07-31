@@ -1,0 +1,43 @@
+<div *ngFor="let filter of sidebardata" class="mb-3">
+  <!-- Show search bar only for 'Deity' heading -->
+  <div *ngIf="filter.heading === 'Deity'; else showHeading">
+    <input
+      type="text"
+      [(ngModel)]="deitySearch"
+      class="form-control form-control-sm mb-2"
+      placeholder="Search Deity"
+    />
+  </div>
+
+  <ng-template #showHeading>
+    <h5 class="fw-bold">{{ filter.heading }}</h5>
+  </ng-template>
+
+  <!-- List of filtered checkboxes -->
+  <div *ngFor="let name of getVisibleNames(filter)">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        [id]="filter.heading + '-' + name"
+        [checked]="isChecked(filter.heading, name)"
+        (change)="toggleFilterSelection(filter.heading, name)"
+      />
+      <label class="form-check-label" [for]="filter.heading + '-' + name">
+        {{ name }}
+      </label>
+    </div>
+  </div>
+
+  <!-- Show toggle if more than 5 items -->
+  <div *ngIf="filter.names.length > 5" class="ms-2 mt-1">
+    <span
+      (click)="toggleShowAll(filter)"
+      style="font-size: 14px; cursor: pointer;"
+      class="ms-4 text-primary text-lowercase"
+    >
+      <i class="bi" [ngClass]="showAllMap[filter.heading] ? 'bi-dash-circle' : 'bi-plus-circle'"></i>
+      {{ showAllMap[filter.heading] ? 'Less ' + filter.heading : 'More ' + filter.heading }}
+    </span>
+  </div>
+</div>

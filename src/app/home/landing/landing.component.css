@@ -1,0 +1,18 @@
+.custom-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev.custom-control {
+  left: 15px;
+}
+
+.carousel-control-next.custom-control {
+  right: 15px;
+}
