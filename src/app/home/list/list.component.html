@@ -1,13 +1,16 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 mb-4" *ngFor="let temple of paginatedData">
-            <div class="position-relative card shadow-sm overflow-hidden">
-                <img [src]="temple.image" class="card-img-top" [alt]="temple.title" />
-                <span class="position-absolute bottom-0 start-0 m-2">
+            <div class="position-relative card shadow-sm overflow-hidden" style="height: 180px;">
+                <div class="w-100 h-100">
+                    <img [src]="temple.image" class="card-img-top h-100 w-100 object-fit-cover" [alt]="temple.title" />
+                </div>
+                <span class="position-absolute bottom-0 start-0 m-2 d-flex align-items-center">
                     <i class="bi bi-geo-alt text-white"></i>
                     <span class="text-white ms-1">{{ temple.location }}</span>
                 </span>
             </div>
+
             <div class="mt-2">
                 <h5 class="fw-bold">{{ temple.title }}</h5>
                 <p class="clamp-3-lines">{{ temple.description }}</p>

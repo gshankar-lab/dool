@@ -76,170 +76,33 @@ export class HomeComponent {
       title: "Jagannath Temple",
       description: "Located in Puri, Odisha, the Jagannath Temple is one of the Char Dham pilgrimage sites. It is dedicated to Lord Jagannath (a form of Krishna) and is renowned for its annual Rath Yatra, where the deities are taken out in massive chariots."
     },
+     {
+    image: "/assets/images/kedarnath.jpg",
+    location: "Uttarakhand",
+    title: "Kedarnath Temple",
+    description: "Located in the Himalayas near the Mandakini River, Kedarnath Temple is one of the twelve Jyotirlingas dedicated to Lord Shiva. Surrounded by snow-capped peaks, it is a significant pilgrimage site in Char Dham."
+  },
+  {
+    image: "/assets/images/dwarka.jpg",
+    location: "Dwarka",
+    title: "Dwarkadhish Temple",
+    description: "Situated in Dwarka, Gujarat, this temple is dedicated to Lord Krishna. It is one of the Char Dham pilgrimage sites and is known for its five-storied structure supported by 72 pillars."
+  },
+  {
+    image: "/assets/images/rameshwaram.jpg",
+    location: "Rameswaram",
+    title: "Ramanathaswamy Temple",
+    description: "Located on Rameswaram Island in Tamil Nadu, this temple is dedicated to Lord Shiva and is known for its long corridors, towering gopurams, and sacred water tanks. It is part of the Char Dham pilgrimage."
+  },
+  
+  {
+    image: "/assets/images/konark.jpg",
+    location: "Konark",
+    title: "Sun Temple",
+    description: "The Konark Sun Temple in Odisha is a 13th-century marvel dedicated to the Sun God, Surya. Built in the shape of a colossal chariot, it is a UNESCO World Heritage Site renowned for its architectural brilliance."
+  }
 
-    {
-      image: "/assets/images/somnath.png",
-      location: "Gujarat",
-      title: "Somnath Temple",
-      description: "Located in Prabhas Patan, Gujarat, Somnath Temple is one of the twelve sacred Jyotirlinga shrines dedicated to Lord Shiva. It holds immense spiritual significance and has been reconstructed several times throughout history."
-    },
-    {
-      image: "/assets/images/amristar.png",
-      location: "Amritsar",
-      title: "Golden Temple",
-      description: "The Golden Temple, or Harmandir Sahib, is the most important pilgrimage site of Sikhism. Located in Amritsar, Punjab, it is known for its serene architecture and the holy Amrit Sarovar surrounding it."
-    },
-    {
-      image: "/assets/images/Madurai.png",
-      location: "Madurai",
-      title: "Meenakshi Temple",
-      description: "Situated on the southern bank of the Vaigai River in Madurai, Tamil Nadu, Meenakshi Temple is dedicated to Goddess Meenakshi (a form of Parvati) and Lord Sundareswarar (Shiva). The temple is famous for its towering gopurams and intricate sculptures."
-    },
-    {
-      image: "/assets/images/kaasi.png",
-      location: "Varanasi",
-      title: "Kasi Vishwanath Temple",
-      description: "Kasi Vishwanath Temple in Varanasi, Uttar Pradesh, is one of the holiest Shiva temples. Located on the banks of the Ganga, it is one of the twelve Jyotirlingas and is central to the spiritual heritage of India."
-    },
-    {
-      image: "/assets/images/katra.png",
-      location: "Katra",
-      title: "Vaishno Devi Temple",
-      description: "Situated in the Trikuta Mountains of Jammu and Kashmir, Vaishno Devi Temple is a revered shrine dedicated to Goddess Vaishno Devi. Pilgrims undertake a 13-kilometer trek to reach the holy cave."
-    },
-    {
-      image: "/assets/images/Delhi.png",
-      location: "New Delhi",
-      title: "Akshardham Temple",
-      description: "Swaminarayan Akshardham in New Delhi showcases the rich cultural and spiritual heritage of India. It features intricate carvings, exhibitions, musical fountains, and an awe-inspiring central monument."
-    },
-    {
-      image: "/assets/images/Tanjore.png",
-      location: "Tanjore",
-      title: "Brihadeeswarar Temple",
-      description: "Located in Thanjavur, Tamil Nadu, Brihadeeswarar Temple is a UNESCO World Heritage Site and a brilliant example of Chola architecture. It is dedicated to Lord Shiva and features a towering vimana over the sanctum."
-    },
-    {
-      image: "/assets/images/tirumala.png",
-      location: "Tirumala",
-      title: "Tirupati Balaji Temple",
-      description: "Located in Tirumala, Andhra Pradesh, Tirupati Balaji Temple is dedicated to Lord Venkateswara (a form of Vishnu). It is one of the richest and most visited temples in the world."
-    },
-    {
-      image: "/assets/images/puri.png",
-      location: "Puri",
-      title: "Jagannath Temple",
-      description: "Located in Puri, Odisha, the Jagannath Temple is one of the Char Dham pilgrimage sites. It is dedicated to Lord Jagannath (a form of Krishna) and is renowned for its annual Rath Yatra, where the deities are taken out in massive chariots."
-    },
-
-    {
-      image: "/assets/images/somnath.png",
-      location: "Gujarat",
-      title: "Somnath Temple",
-      description: "Located in Prabhas Patan, Gujarat, Somnath Temple is one of the twelve sacred Jyotirlinga shrines dedicated to Lord Shiva. It holds immense spiritual significance and has been reconstructed several times throughout history."
-    },
-    {
-      image: "/assets/images/amristar.png",
-      location: "Amritsar",
-      title: "Golden Temple",
-      description: "The Golden Temple, or Harmandir Sahib, is the most important pilgrimage site of Sikhism. Located in Amritsar, Punjab, it is known for its serene architecture and the holy Amrit Sarovar surrounding it."
-    },
-    {
-      image: "/assets/images/Madurai.png",
-      location: "Madurai",
-      title: "Meenakshi Temple",
-      description: "Situated on the southern bank of the Vaigai River in Madurai, Tamil Nadu, Meenakshi Temple is dedicated to Goddess Meenakshi (a form of Parvati) and Lord Sundareswarar (Shiva). The temple is famous for its towering gopurams and intricate sculptures."
-    },
-    {
-      image: "/assets/images/kaasi.png",
-      location: "Varanasi",
-      title: "Kasi Vishwanath Temple",
-      description: "Kasi Vishwanath Temple in Varanasi, Uttar Pradesh, is one of the holiest Shiva temples. Located on the banks of the Ganga, it is one of the twelve Jyotirlingas and is central to the spiritual heritage of India."
-    },
-    {
-      image: "/assets/images/katra.png",
-      location: "Katra",
-      title: "Vaishno Devi Temple",
-      description: "Situated in the Trikuta Mountains of Jammu and Kashmir, Vaishno Devi Temple is a revered shrine dedicated to Goddess Vaishno Devi. Pilgrims undertake a 13-kilometer trek to reach the holy cave."
-    },
-    {
-      image: "/assets/images/Delhi.png",
-      location: "New Delhi",
-      title: "Akshardham Temple",
-      description: "Swaminarayan Akshardham in New Delhi showcases the rich cultural and spiritual heritage of India. It features intricate carvings, exhibitions, musical fountains, and an awe-inspiring central monument."
-    },
-    {
-      image: "/assets/images/Tanjore.png",
-      location: "Tanjore",
-      title: "Brihadeeswarar Temple",
-      description: "Located in Thanjavur, Tamil Nadu, Brihadeeswarar Temple is a UNESCO World Heritage Site and a brilliant example of Chola architecture. It is dedicated to Lord Shiva and features a towering vimana over the sanctum."
-    },
-    {
-      image: "/assets/images/tirumala.png",
-      location: "Tirumala",
-      title: "Tirupati Balaji Temple",
-      description: "Located in Tirumala, Andhra Pradesh, Tirupati Balaji Temple is dedicated to Lord Venkateswara (a form of Vishnu). It is one of the richest and most visited temples in the world."
-    },
-    {
-      image: "/assets/images/puri.png",
-      location: "Puri",
-      title: "Jagannath Temple",
-      description: "Located in Puri, Odisha, the Jagannath Temple is one of the Char Dham pilgrimage sites. It is dedicated to Lord Jagannath (a form of Krishna) and is renowned for its annual Rath Yatra, where the deities are taken out in massive chariots."
-    },
-    {
-      image: "/assets/images/somnath.png",
-      location: "Gujarat",
-      title: "Somnath Temple",
-      description: "Located in Prabhas Patan, Gujarat, Somnath Temple is one of the twelve sacred Jyotirlinga shrines dedicated to Lord Shiva. It holds immense spiritual significance and has been reconstructed several times throughout history."
-    },
-    {
-      image: "/assets/images/amristar.png",
-      location: "Amritsar",
-      title: "Golden Temple",
-      description: "The Golden Temple, or Harmandir Sahib, is the most important pilgrimage site of Sikhism. Located in Amritsar, Punjab, it is known for its serene architecture and the holy Amrit Sarovar surrounding it."
-    },
-    {
-      image: "/assets/images/Madurai.png",
-      location: "Madurai",
-      title: "Meenakshi Temple",
-      description: "Situated on the southern bank of the Vaigai River in Madurai, Tamil Nadu, Meenakshi Temple is dedicated to Goddess Meenakshi (a form of Parvati) and Lord Sundareswarar (Shiva). The temple is famous for its towering gopurams and intricate sculptures."
-    },
-    {
-      image: "/assets/images/kaasi.png",
-      location: "Varanasi",
-      title: "Kasi Vishwanath Temple",
-      description: "Kasi Vishwanath Temple in Varanasi, Uttar Pradesh, is one of the holiest Shiva temples. Located on the banks of the Ganga, it is one of the twelve Jyotirlingas and is central to the spiritual heritage of India."
-    },
-    {
-      image: "/assets/images/katra.png",
-      location: "Katra",
-      title: "Vaishno Devi Temple",
-      description: "Situated in the Trikuta Mountains of Jammu and Kashmir, Vaishno Devi Temple is a revered shrine dedicated to Goddess Vaishno Devi. Pilgrims undertake a 13-kilometer trek to reach the holy cave."
-    },
-    {
-      image: "/assets/images/Delhi.png",
-      location: "New Delhi",
-      title: "Akshardham Temple",
-      description: "Swaminarayan Akshardham in New Delhi showcases the rich cultural and spiritual heritage of India. It features intricate carvings, exhibitions, musical fountains, and an awe-inspiring central monument."
-    },
-    {
-      image: "/assets/images/Tanjore.png",
-      location: "Tanjore",
-      title: "Brihadeeswarar Temple",
-      description: "Located in Thanjavur, Tamil Nadu, Brihadeeswarar Temple is a UNESCO World Heritage Site and a brilliant example of Chola architecture. It is dedicated to Lord Shiva and features a towering vimana over the sanctum."
-    },
-    {
-      image: "/assets/images/tirumala.png",
-      location: "Tirumala",
-      title: "Tirupati Balaji Temple",
-      description: "Located in Tirumala, Andhra Pradesh, Tirupati Balaji Temple is dedicated to Lord Venkateswara (a form of Vishnu). It is one of the richest and most visited temples in the world."
-    },
-    {
-      image: "/assets/images/puri.png",
-      location: "Puri",
-      title: "Jagannath Temple",
-      description: "Located in Puri, Odisha, the Jagannath Temple is one of the Char Dham pilgrimage sites. It is dedicated to Lord Jagannath (a form of Krishna) and is renowned for its annual Rath Yatra, where the deities are taken out in massive chariots."
-    }
+   
 
   ];
 
