@@ -110,16 +110,17 @@ export class HomeComponent {
     {
       heading: "Location",
       names: [
-        "Maharashtra",
-        "Tamil Nadu",
-        "Kerala",
-        "Karnataka",
         "Gujarat",
-        "Rajasthan",
-        "Punjab",
-        "Bihar",
-        "Uttar Pradesh",
-        "West Bengal"
+        "Amritsar",
+        "Madurai",
+        "Varanasi",
+        "Katra",
+        "New Delhi",
+        "Tanjore",
+        "Tirumala",
+        "Puri",
+        "Rameshwaram",
+        // "West Bengal"
       ]
     },
     {
@@ -155,4 +156,22 @@ export class HomeComponent {
 }
 
   ]
+
+  filteredListData: any[] = [];
+
+ngOnInit() {
+  this.filteredListData = this.ListTemplaData; // default view
+}
+
+onFiltersChanged(filters: { [key: string]: string[] }) {
+  this.filteredListData = this.ListTemplaData.filter(item => {
+    // Check Location
+    const matchLocation =
+      !filters['Location'] || filters['Location'].includes(item.location);
+
+    // Optional: Check Deity or Mission if added later
+
+    return matchLocation;
+  });
+}
 }

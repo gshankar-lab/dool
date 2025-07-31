@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SidebarComponent {
   @Input() sidebardata: any[] = [];
+  @Output() filtersChanged = new EventEmitter<{ [key: string]: string[] }>();
 
   selectedFilters: { [key: string]: string[] } = {};
   showAllMap: { [key: string]: boolean } = {};
@@ -22,6 +23,9 @@ export class SidebarComponent {
     } else {
       this.selectedFilters[filterHeading].splice(index, 1);
     }
+
+    // Emit updated filters
+    this.filtersChanged.emit(this.selectedFilters);
   }
 
   isChecked(filterHeading: string, name: string): boolean {
