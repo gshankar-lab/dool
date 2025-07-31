@@ -1,48 +1,36 @@
-<!-- <div *ngFor="let temple of templeData">
-  <img [src]="temple.TempleImage" alt="{{ temple.title }}" style="width: 100%">
-  <h3>{{ temple.title }} - {{ temple.location }}</h3>
-  <p>{{ temple.description }}</p>
-</div> -->
+<div id="templeCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let data of templeData; let i = index" [class.active]="i === 0">
+            <div class="container">
+                <div class="row mb-4 align-items-center position-relative">
+                    <div class="col-md-8 position-relative">
+                        <img [src]="data.TempleImage" alt="Temple Image" class="img-fluid rounded w-100">
+                        <span class="position-absolute bottom-0 start-0 m-3">
+                            <i class="bi bi-geo-alt text-white"></i>
+                            <span class="text-white ms-1">{{ data.location }}</span>
+                        </span>
+                        <button class="carousel-control-prev custom-control" type="button"
+                            data-bs-target="#templeCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next custom-control" type="button"
+                            data-bs-target="#templeCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="fw-bold">{{ data.title }}</h5>
+                        <p>{{ data.description }}</p>
 
-<div id="templeCarousel" class="carousel slide" >
-  <div class="carousel-inner">
-    <div 
-      class="carousel-item" 
-      *ngFor="let data of templeData; let i = index" 
-      [class.active]="i === 0"
-    >
-      <div class="container">
-        <div class="row mb-4 align-items-center position-relative">
-          <div class="col-md-8 position-relative">
-            <img [src]="data.TempleImage" alt="Temple Image" class="img-fluid rounded w-100">
-            <!-- Controls over the image -->
-            <button 
-              class="carousel-control-prev custom-control" 
-              type="button" 
-              data-bs-target="#templeCarousel" 
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button 
-              class="carousel-control-next custom-control" 
-              type="button" 
-              data-bs-target="#templeCarousel" 
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <div class="col-md-4">
-            <h5 class="fw-bold">{{ data.title }}</h5>
-            <p>{{ data.description }}</p>
-          </div>
+                        <div class="mt-2 d-flex gap-2">
+                            <button class="btn btn-light  btn-sm">Visit Temple</button>
+                            <button class="btn bg-orange text-white">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-
-

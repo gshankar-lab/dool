@@ -11,13 +11,13 @@ export class HomeComponent {
       TempleImage: "/assets/images/Carousel_image.png",
       location: "Chennai",
       title: "KabaleshwarTemple",
-      description: "Kapaleeswarar temple is one of the prominent Shiva temples in India situated in Mylapore, Chennai. Here Lord Shiva is worshipped as Kapaleeswar [self-manifested] and Goddess Shakthi [Uma] as Karpagambal. There is a story behind how the place got the name Mylapore and the same story is the root of this magnificent pilgrim center. According to the legend, Goddess Karpagambal [Uma] wished to know the meaning of the five lettered divine mantra “Na Ma Shi Va Ya”."
+      description: "KabaleshwarTemple temple is one of the prominent Shiva temples in India situated in Mylapore, Chennai. Here Lord Shiva is worshipped as Kapaleeswar [self-manifested]  "
     },
     {
       TempleImage: "/assets/images/Carousel_image.png",
       location: "Madurai",
       title: "Meenachi Amman Temple",
-      description: "Arulmigu Meenakshi Sundareswarar Temple, also known as Arulmigu Meenakshi Amman Thirukkovil, is a historic Hindu temple located on the southern bank of the Vaigai River[2] in the temple city[3] of Madurai, Tamil Nadu, India. It is dedicated to the goddess Meenakshi, a form of Parvati, her consort Sundareśvarar, a form of Shiva and her brother Aḻagar, a form of Vishnu.[4] The temple is theologically significant as it represents a confluence of the Shaivism, Shaktism and Vaishnavism denominations of Hinduism."
+      description: "Arulmigu Meenakshi Sundareswarar Temple, also known as Arulmigu Meenakshi Amman Thirukkovil, is a historic Hindu temple located on the southern bank of the Vaigai River in the temple city of Madurai."
     }
   ]
 

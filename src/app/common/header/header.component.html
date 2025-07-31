@@ -1,1 +1,87 @@
-<p>header works!</p>
+<div class="container-fluid">
+    <div class="container">
+       <div class="d-flex flex-wrap gap-2 justify-content-end">
+  <div *ngFor="let data of TopHeaders">
+    <span class="badge align-items-center"
+          [ngClass]="data.name === 'English' ? 'text-orange' : 'text-dark'">
+      {{ data.name }}
+    </span>
+  </div>
+</div>
+
+    </div>
+</div>
+
+
+<div class="position-relative">
+    <div class="bg-overlay"></div>
+    <div class="container-fluid py-2 shadow-sm position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 d-flex align-items-center">
+                    <img src="/assets/images/header.png" alt="Logo" class="img-fluid me-3" style="height: 40px;">
+
+                    <div class="input-group w-50 me-3">
+                        <span class="input-group-text bg-white radius ">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" class="form-control border-start-0 border-end-0"
+                            placeholder="Search for temples, events or fundraisers">
+                        <span class="input-group-text bg-white right">
+                            <i class="bi bi-mic"></i>
+                        </span>
+                    </div>
+
+                    <span class="btn btn-sm btn-outline-warning fw-semibold bg-orange text-white me-3">
+                        Donate now
+                    </span>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-end align-items-center">
+                    <div class="dropdown me-2">
+                        <span class="dropdown-toggle text-dark text-decoration-none text-white" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ selectedCity }}
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" (click)="selectCity('Bangalore')">Bangalore</a></li>
+                            <li><a class="dropdown-item" href="#" (click)="selectCity('Mumbai')">Mumbai</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="dropdown me-2">
+                        <button class="btn btn-light dropdown-toggle rounded-pill px-3" type="button"
+                            data-bs-toggle="dropdown" style="font-size: 12px; color: #EB693C;">
+                            {{ selectedCurrency }}
+                        </button>
+                        <ul class="dropdown-menu rounded">
+                            <li><a class="dropdown-item" href="#" (click)="selectCurrency('INR')">INR</a></li>
+                            <li><a class="dropdown-item" href="#" (click)="selectCurrency('USD')">USD</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <span class="fw-semibold me-2" style="font-size: 13px;">Deepak Sharma</span>
+                    <i class="bi bi-list fs-4"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid background">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap py-2">
+            <div class="fw-bold">Explore Template</div>
+            <div>
+                <i class="bi bi-house text-muted"></i>
+                <i class="bi bi-chevron-compact-right text-muted"></i>
+                <span class="text-muted">Explore Template</span>
+            </div>
+        </div>
+    </div>
+</div>

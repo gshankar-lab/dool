@@ -6,5 +6,28 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  selectedCity: string = 'Chennai';
+  selectedCurrency: string = 'GBP';
+  TopHeaders = [
+    {
+      name: "Fundraisers"
+    },
+    {
+      name: "Events"
+    },
+    {
+      name: "Favorites"
+    },
+    {
+      name: "English"
+    }
+  ]
 
+
+  selectCity(city: string): void {
+    this.selectedCity = city;
+  }
+  selectCurrency(currency: string): void {
+    this.selectedCurrency = currency;
+  }
 }
