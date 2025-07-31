@@ -164,14 +164,30 @@ ngOnInit() {
 }
 
 onFiltersChanged(filters: { [key: string]: string[] }) {
+  // If no filters are selected, show all temples
+  const isEmptyFilter = Object.values(filters).every(arr => arr.length === 0);
+  if (isEmptyFilter) {
+    this.filteredListData = this.ListTemplaData;
+    return;
+  }
+
   this.filteredListData = this.ListTemplaData.filter(item => {
-    // Check Location
-    const matchLocation =
-      !filters['Location'] || filters['Location'].includes(item.location);
+    const locationMatch =
+      !filters['Location']?.length || filters['Location'].includes(item.location);
 
-    // Optional: Check Deity or Mission if added later
+    const deityMatch =
+      !filters['Deity']?.length || filters['Deity'].some(deity =>
+        item.title.toLowerCase().includes(deity.toLowerCase())
+      );
 
-    return matchLocation;
+    const missionMatch =
+      !filters['Mission']?.length || filters['Mission'].some(mission =>
+        item.description.toLowerCase().includes(mission.toLowerCase())
+      );
+
+    // Match all selected filters
+    return locationMatch && deityMatch && missionMatch;
   });
 }
+
 }

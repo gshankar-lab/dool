@@ -31,3 +31,16 @@
 .text-orange {
     color: #EB693C;
 }
+
+@media screen and (max-width: 767px) {
+    .bg-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 75%;
+        z-index: 0;
+        background: linear-gradient(to right, #F3B33E, #EB693C);
+        border-top-left-radius: 40px;
+    }
+}
